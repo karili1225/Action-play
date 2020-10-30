@@ -42,7 +42,8 @@ jobs:
           username: ${{ secrets.MAILUSERNAME }}
           password: ${{ secrets.MAILPASSWORD }}
           subject: gh Actions job result
-          body: file://jt1.jpg
+          body: possible success!
           to: ity4441295@163.com
           from: ghActions
           content_type: text/html
+          attachments: ./jt1.jpg
