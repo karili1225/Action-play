@@ -37,12 +37,13 @@ jobs:
       - name: 'Send mail'
         uses: dawidd6/action-send-mail@master
         with:
-          serveraddress: smtp.qq.com
-          serverport: 465
+          server_address: smtp.qq.com
+          server_port: 465
           username: ${{ secrets.MAILUSERNAME }}
           password: ${{ secrets.MAILPASSWORD }}
-          subject: Shanghai Weather Report
-          body: file://jt1.jpg
+          subject: gh Actions job result
+          body: possible success!
           to: ity4441295@163.com
           from: ghActions
           content_type: text/html
+          attachments: ./jt1.jpg
