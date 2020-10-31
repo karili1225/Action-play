@@ -26,6 +26,5 @@ jobs:
       run: |
         sudo rm -rf /etc/apt/sources.list.d/*
         sudo cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
-        TZ='Asia/Shanghai'; export TZ
         date -R
         java -jar date.jar
